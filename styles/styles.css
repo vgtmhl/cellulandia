@@ -90,9 +90,62 @@ body {
   margin: 0 1.5rem;
 }
 
-.about {
-  background: #412032;
+.about-section {
   height: 100vh;
+  width: auto;
+  background: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-section .about {
+  height: 75%;
+  width: 75%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 3rem;
+}
+
+.about-section .about-title {
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+.about-section .about__text {
+  margin: 5rem 0;
+  color: white;
+}
+
+.about-section .about__text__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.about-section .about__picture-1 {
+  background: url("../assets/store_pic.jpg") no-repeat center center/cover;
+  height: 400px;
+  width: 600px;
+}
+
+.about-section .about__picture-2 {
+  background: url("../assets/store_pic.jpg") no-repeat center center/cover;
+  height: 400px;
+  width: 600px;
 }
 
 .button {
