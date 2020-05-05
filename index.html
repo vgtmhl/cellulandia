@@ -4,8 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cellulandia</title>
+
+    <!-- Local stylesheets -->
+    <link rel="stylesheet" href="/styles/styles.css" />
+
+    <!-- Remote stylesheets/ CDNs -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/227f3324b3.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
-    <h1>Hello, world</h1>
+    <!-- Navbar -->
+    <div class="navbar">
+      <a href="#homepage" class="navbar__item"><i class="fas fa-home"></i></a>
+      <a href="#about" class="navbar__item">CHI SIAMO</a>
+      <a class="navbar__item">DOVE SIAMO</a>
+      <a class="navbar__item">SERVIZI</a>
+      <a class="navbar__item">CONTATTACI</a>
+    </div>
   </body>
+
+  <!-- Section 1: Home Page -->
+
+  <header class="homepage" id="homepage">
+    <div class="overlay" />
+    <div class="homepage__content">
+      <h1 class="homepage__content__title">Cellulandia</h1>
+      <h3 class="homepage__content__description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet porro
+        veniam culpa quae, dolorem quisquam odio nemo recusandae ad ducimus?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, id?
+      </h3>
+      <div class="homepage__content__buttons">
+        <button class="button button--light">Vieni a trovarci</button>
+        <button class="button button--light">Contattaci</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 2: About -->
+  <section class="about" id="about">
+    <div class="about__picture"></div>
+    <div class="about__content">
+      <div class="abount__content__title"></div>
+      <div class="abount__content__description"></div>
+    </div>
+  </section>
+  <!-- Section 3: Location -->
+  <!-- Section 4: Services -->
+  <!-- Section 5: Contacts -->
 </html>
