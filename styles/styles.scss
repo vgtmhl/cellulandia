@@ -11,6 +11,11 @@ body {
   user-select: none;
 }
 
+.section {
+  height: 100vh;
+  width: auto;
+}
+
 // Navbar Styling
 .navbar {
   display: flex;
@@ -34,9 +39,8 @@ body {
 
 // Homepage styling
 .homepage {
-  height: 100vh;
-  width: auto;
   background: url("../assets/homepage_bg.jpg") no-repeat center center fixed;
+  height: 100%;
 
   .overlay {
     width: 100%;
@@ -76,8 +80,6 @@ body {
 
 // About section styling
 .about-section {
-  height: 100vh;
-  width: auto;
   background: #333;
   display: flex;
   flex-direction: column;
@@ -98,8 +100,8 @@ body {
     }
 
     &__text {
-        margin: 5rem 0;
-        color: white;
+      margin: 5rem 0;
+      color: white;
       &__title {
         font-size: 1.5rem;
         font-weight: 700;
@@ -115,6 +117,60 @@ body {
       background: url("../assets/store_pic.jpg") no-repeat center center/cover;
       height: 400px;
       width: 600px;
+    }
+  }
+}
+
+// Location section styling
+.location-title {
+  color: white;
+  padding-bottom: 3rem;
+}
+
+.location-section {
+  background: #786895;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.location {
+  display: flex;
+  height: 60%;
+  width: 60%;
+
+  &__map {
+    flex: 1;
+    background: url(../assets/sample_map.png) no-repeat center center/cover;
+  }
+
+  &__info {
+    flex: 1;
+    background-color: #333;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__where {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    &__opening-hours {
+      line-height: 2rem;
+      text-align: right;
+
+      .day {
+        font-weight: 700;
+        margin-right: 1rem;
+      }
     }
   }
 }

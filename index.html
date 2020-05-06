@@ -24,7 +24,7 @@
     <div class="navbar">
       <a href="#homepage" class="navbar__item"><i class="fas fa-home"></i></a>
       <a href="#about" class="navbar__item">CHI SIAMO</a>
-      <a class="navbar__item">DOVE SIAMO</a>
+      <a href="#location" class="navbar__item">DOVE SIAMO</a>
       <a class="navbar__item">SERVIZI</a>
       <a class="navbar__item">CONTATTACI</a>
     </div>
@@ -32,7 +32,7 @@
 
   <!-- Section 1: Home Page -->
 
-  <header class="homepage-section" id="homepage">
+  <header class="section homepage-section" id="homepage">
     <div class="homepage">
       <div class="overlay" />
       <div class="homepage__content">
@@ -44,15 +44,19 @@
           Debitis, id?
         </h3>
         <div class="homepage__content__buttons">
-          <button class="button button--light">Vieni a trovarci</button>
-          <button class="button button--light">Contattaci</button>
+          <button href="#location" class="button button--light">
+            Vieni a trovarci
+          </button>
+          <button class="button button--light">
+            Contattaci
+          </button>
         </div>
       </div>
     </div>
   </header>
 
   <!-- Section 2: About -->
-  <section class="about-section" id="about">
+  <section class="section about-section" id="about">
     <h1 class="about-title">Chi Siamo</h1>
 
     <div class="about">
@@ -89,6 +93,46 @@
   </section>
 
   <!-- Section 3: Location -->
+  <section class="section location-section" id="location">
+    <h1 class="location-title">Dove Siamo</h1>
+    <div class="location">
+      <div class="location__map">
+        <!-- TODO: CHANGE WITH ACTUAL MAP WIDGET -->
+      </div>
+
+      <div class="location__info">
+        <div class="location__info__where">
+          <span class="city"
+            >VIA NON RICORDO 23, 32010, <br />
+            PONTE NELLE ALPI, BELLUNO<br
+          /></span>
+        </div>
+        <div class="location__info__opening-hours">
+          <span class="mon"
+            ><span class="day">LUN:</span> 9:00-13:00 / 15:00-18:00<br
+          /></span>
+          <span class="tue"
+            ><span class="day">MAR:</span> 9:00-13:00 / 15:00-18:00<br
+          /></span>
+          <span class="wen"
+            ><span class="day">MER:</span> 9:00-13:00 / 15:00-18:00<br
+          /></span>
+          <span class="thu"
+            ><span class="day">GIO:</span> 9:00-13:00 / 15:00-18:00<br
+          /></span>
+          <span class="fri"
+            ><span class="day">VEN:</span> 9:00-13:00 / 15:00-18:00<br
+          /></span>
+          <span class="sat"
+            ><span class="day">SAB:</span> 9:00-13:00 / 15:00-18:00<br
+          /></span>
+          <span class="san"
+            ><span class="day">DOM:</span> 9:00-13:00 / 15:00-18:00<br
+          /></span>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Section 4: Services -->
   <!-- Section 5: Contacts -->
 </html>
