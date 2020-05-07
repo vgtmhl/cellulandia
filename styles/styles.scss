@@ -175,6 +175,75 @@ body {
   }
 }
 
+// Services section styling
+
+.services-section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .subsection-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+  }
+
+  .solutions-block {
+    width: 100%;
+    height: 50vh;
+    background: #998899;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brands-block {
+    width: 100%;
+    height: 50vh;
+    background: #aa99ff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subsection {
+    margin: 4rem 0;
+  }
+
+  .showcase {
+    display: flex;
+
+    .showcase-item {
+      margin: 0 3.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .icon {
+        font-size: 8rem;
+        color: #333;
+      }
+
+      .title {
+        color: #000;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+// Contacts section
+.section-contacts {
+  width: 100%;
+  background: #333;
+}
+
 // Auxiliary and corrective styling
 .button {
   border: none;

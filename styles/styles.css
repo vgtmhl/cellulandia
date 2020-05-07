@@ -225,6 +225,104 @@ body {
   margin-right: 1rem;
 }
 
+.services-section {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services-section .subsection-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+}
+
+.services-section .solutions-block {
+  width: 100%;
+  height: 50vh;
+  background: #998899;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services-section .brands-block {
+  width: 100%;
+  height: 50vh;
+  background: #aa99ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services-section .subsection {
+  margin: 4rem 0;
+}
+
+.services-section .showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services-section .showcase .showcase-item {
+  margin: 0 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services-section .showcase .showcase-item .icon {
+  font-size: 8rem;
+  color: #333;
+}
+
+.services-section .showcase .showcase-item .title {
+  color: #000;
+  font-size: 1.4rem;
+}
+
+.section-contacts {
+  width: 100%;
+  background: #333;
+}
+
 .button {
   border: none;
   padding: 1rem 2rem;
