@@ -146,7 +146,6 @@
     margin-top: 1rem;
   }
   .right-pane .contact-form {
-    margin: 0 1rem;
     margin-bottom: 1rem;
   }
   .right-pane .contact-form .fields {
@@ -157,6 +156,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 0 2rem;
+  }
+  .right-pane .contact-form .input-message {
+    margin: 2rem;
   }
   .right-pane .contact-form .input-field {
     text-align: center;
