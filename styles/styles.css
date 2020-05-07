@@ -319,8 +319,120 @@ body {
 }
 
 .section-contacts {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left-pane {
+  background: #987897;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.left-pane i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.left-pane span {
+  font-size: 2rem;
+}
+
+.right-pane {
+  background: #787898;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.right-pane .title {
+  margin-bottom: 1rem;
+}
+
+.right-pane .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.right-pane .contact-form .input-field {
+  font-size: 1.3rem;
+  padding: 0.3rem 0.1rem;
+  margin: 0.1rem;
+  color: #333;
+}
+
+.right-pane .contact-form .input-message {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  outline: none;
+  resize: none;
+}
+
+.right-pane .contact-form .input-btn {
+  font-size: 1.3rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 20%;
+  padding: 0.33rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
   background: #333;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.right-pane .contact-form .input-btn:hover {
+  background: #222;
+}
+
+.right-pane .contact-form .fields {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  margin-bottom: 1rem;
+}
+
+footer {
+  height: 8vh;
+  width: 100%;
+  background: black;
 }
 
 .button {
