@@ -1,0 +1,116 @@
+@media screen and (max-width: 600px) {
+  // General styling
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  // Navbar styling
+  .navbar {
+    display: none;
+  }
+
+  // Homepage Styling
+  .homepage {
+    background: url("../assets/homepage_bg.jpg") no-repeat right;
+
+    &__content {
+      &__title {
+        font-size: 5rem;
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+      }
+
+      &__description {
+        font-size: 1.2rem;
+      }
+
+      &__buttons {
+        button {
+          font-size: 1rem;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+
+  // About section styling
+
+  .about-section {
+    height: auto;
+    .about-title {
+      margin-top: 3rem;
+    }
+    .about {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+
+      &__picture-1,
+      &__picture-2 {
+        height: 200px;
+        width: 300px;
+        margin: 0.5rem;
+        align-self: center;
+      }
+
+      &-block-1 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-block-2 {
+        display: flex;
+        flex-direction: column;
+
+        .about__picture-2 {
+          order: 1;
+        }
+
+        .par2 {
+          order: 2;
+        }
+      }
+
+      &__text {
+        align-self: center;
+        text-align: center;
+        &__title {
+          margin-bottom: 0.3rem;
+        }
+      }
+    }
+  }
+
+  //   location styling
+  .location-title {
+    display: none;
+  }
+  .location {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    &__map {
+      order: 2;
+    }
+
+    &__info {
+      background: #786895;
+
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+
+      &__opening-hours {
+        line-height: 1.3rem;
+      }
+    }
+  }
+
+// Services styling
+}

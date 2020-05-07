@@ -16,7 +16,7 @@ body {
 
 .section {
   height: 100vh;
-  width: auto;
+  width: 100%;
 }
 
 .navbar {
@@ -29,7 +29,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: fixed;
-  width: 100%;
+  width: 100vw;
 }
 
 .navbar__item {
