@@ -143,24 +143,24 @@
   }
 
   .left-pane {
-      padding: 3rem 0;
-      order:2;
+    padding: 3rem 0;
+    order: 2;
   }
 
   .right-pane {
-
     .title {
-        margin-top: 1rem;
+      margin-top: 1rem;
     }
     .contact-form {
+      margin: 0 1rem;
+
       .fields {
-          display: flex;
-          flex-direction: column;
+        display: flex;
+        flex-direction: column;
       }
 
       .input-field {
-          text-align: center;
-          margin: 0 .5rem;
+        text-align: center;
       }
 
       margin-bottom: 1rem;

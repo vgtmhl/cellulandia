@@ -146,6 +146,7 @@
     margin-top: 1rem;
   }
   .right-pane .contact-form {
+    margin: 0 1rem;
     margin-bottom: 1rem;
   }
   .right-pane .contact-form .fields {
@@ -159,7 +160,6 @@
   }
   .right-pane .contact-form .input-field {
     text-align: center;
-    margin: 0 .5rem;
   }
 }
 /*# sourceMappingURL=media.css.map */
