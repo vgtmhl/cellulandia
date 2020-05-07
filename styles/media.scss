@@ -112,5 +112,55 @@
     }
   }
 
-// Services styling
+  // Services styling
+  .services-section {
+    .subsection-title {
+      margin-top: 2rem;
+    }
+
+    .solutions-block,
+    .brands-block {
+      height: auto;
+    }
+
+    .showcase {
+      flex-direction: column;
+
+      .showcase-item {
+        margin-bottom: 1.5rem;
+        .icon {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+  // Contacts styling
+
+  .section-contacts {
+    flex-direction: column;
+  }
+
+  .left-pane {
+      padding: 3rem 0;
+  }
+
+  .right-pane {
+
+    .title {
+        margin-top: 1rem;
+    }
+    .contact-form {
+      .fields {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .input-field {
+          text-align: center;
+      }
+
+      margin-bottom: 1rem;
+    }
+  }
 }

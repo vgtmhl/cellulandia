@@ -110,5 +110,51 @@
   .location__info__opening-hours {
     line-height: 1.3rem;
   }
+  .services-section .subsection-title {
+    margin-top: 2rem;
+  }
+  .services-section .solutions-block,
+  .services-section .brands-block {
+    height: auto;
+  }
+  .services-section .showcase {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services-section .showcase .showcase-item {
+    margin-bottom: 1.5rem;
+  }
+  .services-section .showcase .showcase-item .icon {
+    font-size: 3rem;
+  }
+  .section-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .left-pane {
+    padding: 3rem 0;
+  }
+  .right-pane .title {
+    margin-top: 1rem;
+  }
+  .right-pane .contact-form {
+    margin-bottom: 1rem;
+  }
+  .right-pane .contact-form .fields {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .right-pane .contact-form .input-field {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=media.css.map */
