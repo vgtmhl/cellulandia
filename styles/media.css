@@ -137,6 +137,9 @@
   }
   .left-pane {
     padding: 3rem 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .right-pane .title {
     margin-top: 1rem;
