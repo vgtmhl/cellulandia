@@ -1,7 +1,4 @@
 @media screen and (max-width: 600px) {
-  * {
-    max-width: 100vw;
-  }
   body {
     font-size: 16px;
   }
@@ -19,7 +16,7 @@
   .subsection-title {
     font-weight: 700;
     font-size: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   .navbar {
     display: none;
@@ -39,9 +36,6 @@
     font-size: 1rem;
     padding: 1rem;
   }
-  .about-section {
-    height: auto;
-  }
   .about-section .about-title {
     margin-top: 3rem;
   }
@@ -53,11 +47,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100%;
-    width: 100%;
   }
   .about-section .about .par1, .about-section .about .par2 {
     text-align: center;
+    margin: 1rem 0;
   }
   .about-section .about__picture-1, .about-section .about__picture-2 {
     height: 200px;
@@ -102,7 +95,7 @@
     text-align: center;
   }
   .about-section .about__text__title {
-    margin-bottom: 0.3rem;
+    margin: 0;
   }
   .location-title {
     display: none;
@@ -112,28 +105,19 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100%;
-    width: 100%;
   }
-  .location__map {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+  .location #map {
+    height: 100vh;
+    width: 100vw;
   }
   .location__info {
     background: #786895;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
   }
   .location__info__opening-hours {
     line-height: 1.3rem;
   }
   .services-section .subsection-title {
     margin-top: 2rem;
-  }
-  .services-section .solutions-block,
-  .services-section .brands-block {
-    height: auto;
   }
   .services-section .showcase {
     -webkit-box-orient: vertical;
@@ -145,7 +129,7 @@
     margin-bottom: 1.5rem;
   }
   .services-section .showcase .showcase-item .icon {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .section-contacts {
     -webkit-box-orient: vertical;
@@ -161,9 +145,6 @@
   }
   .right-pane .title {
     margin-top: 1rem;
-  }
-  .right-pane .contact-form {
-    margin-bottom: 1rem;
   }
   .right-pane .contact-form .fields {
     display: -webkit-box;

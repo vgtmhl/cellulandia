@@ -18,6 +18,8 @@
       src="https://kit.fontawesome.com/227f3324b3.js"
       crossorigin="anonymous"
     ></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
   </head>
 
   <body>
@@ -93,10 +95,7 @@
   <section class="location-section" id="location">
     <h1 class="section-title">Dove Siamo</h1>
     <div class="location">
-      <div class="location__map">
-        <!-- TODO: CHANGE WITH ACTUAL MAP WIDGET -->
-      </div>
-
+      <div id='map'></div>
       <div class="location__info">
         <div class="location__info__where">
           <span class="city"
@@ -241,4 +240,24 @@
 
   <!-- footer -->
   <footer></footer>
+
+
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1Ijoidmd0bWhsIiwiYSI6ImNrYWdoMGoyMDAza3ozMW1vZ3Z6dXV3djcifQ.gifM19mikzfGHjXUv_rNSw';
+      
+      var map = new mapboxgl.Map({
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [12.284600, 46.181840],
+        zoom: 18,
+        pitch: 30,
+        container: 'map',
+        antialias: true
+      });
+
+      var marker = new mapboxgl.Marker()
+        .setLngLat([12.284600, 46.181840])
+        .addTo(map);
+
+    </script>
+
 </html>
