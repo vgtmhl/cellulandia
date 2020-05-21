@@ -107,8 +107,12 @@
             flex-direction: column;
   }
   .location #map {
-    height: 100vh;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    height: 400px;
     width: 100vw;
+    margin-bottom: 2rem;
   }
   .location__info {
     background: #786895;

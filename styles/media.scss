@@ -111,8 +111,10 @@
     flex-direction: column;
 
     #map {
-      height: 100vh;
+      align-self: center;
+      height: 400px;
       width: 100vw;
+      margin-bottom: 2rem;
     }
 
     &__info {

@@ -45,10 +45,10 @@ body {
   &__item {
     color: #fff;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: all 0.3s;
 
     &:hover {
-      color: #97b6e8;
+      color: #aaaaaa;
     }
   }
 }
@@ -132,7 +132,7 @@ body {
 // Location section styling
 
 .location-section {
-  background: #786895;
+  background: #212121;
   display: flex;
   flex-direction: column;
 
@@ -200,7 +200,7 @@ body {
 
   .solutions-block {
     width: 100%;
-    background: #998899;
+    background: #919191;
 
     display: flex;
     flex-direction: column;
@@ -209,7 +209,7 @@ body {
 
   .brands-block {
     width: 100%;
-    background: #aa99ff;
+    background: #c4c4c4;
 
     display: flex;
     flex-direction: column;
@@ -246,7 +246,7 @@ body {
 }
 
 .left-pane {
-  background: #987897;
+  background: #292929;
   flex: 1;
   display: flex;
   align-items: center;
@@ -255,15 +255,17 @@ body {
   i {
     font-size: 2rem;
     margin-right: 1rem;
+    color: white;
   }
 
   span {
     font-size: 2rem;
+    color: white;
   }
 }
 
 .right-pane {
-  background: #787898;
+  background: #ebebeb;
   flex: 2;
   display: flex;
   flex-direction: column;
