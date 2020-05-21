@@ -14,9 +14,23 @@ body {
           user-select: none;
 }
 
-.section {
-  height: 100vh;
-  width: 100%;
+.main-title {
+  font-size: 11rem;
+  color: #fff;
+  font-weight: 100;
+}
+
+.section-title {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+
+.subsection-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 3rem;
 }
 
 .navbar {
@@ -45,13 +59,19 @@ body {
 
 .homepage {
   background: url("../assets/homepage_bg.jpg") no-repeat center center fixed;
-  height: 100%;
+  height: 100vh;
 }
 
 .homepage .overlay {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .homepage__content {
@@ -70,11 +90,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-}
-
-.homepage__content__title {
-  font-size: 10rem;
-  font-weight: 100;
 }
 
 .homepage__content__description {
@@ -109,23 +124,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 3rem;
 }
 
 .about-section .about {
-  height: 75%;
   width: 75%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   gap: 3rem;
-}
-
-.about-section .about-title {
-  color: #fff;
-  margin-bottom: 4rem;
 }
 
 .about-section .about__text {
@@ -133,9 +143,8 @@ body {
   color: white;
 }
 
-.about-section .about__text__title {
-  font-size: 1.5rem;
-  font-weight: 700;
+.about-section .about .par1 {
+  text-align: right;
 }
 
 .about-section .about__picture-1 {
@@ -148,11 +157,6 @@ body {
   background: url("../assets/store_pic.jpg") no-repeat center center/cover;
   height: 400px;
   width: 600px;
-}
-
-.location-title {
-  color: white;
-  padding-bottom: 3rem;
 }
 
 .location-section {
@@ -170,14 +174,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 3rem;
 }
 
 .location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 60%;
-  width: 60%;
+  width: 75vw;
+  height: 75vh;
 }
 
 .location__map {
@@ -226,7 +231,6 @@ body {
 }
 
 .services-section {
-  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,15 +247,18 @@ body {
           justify-content: center;
 }
 
-.services-section .subsection-title {
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin-top: 5rem;
+.services-section i {
+  color: #333;
+  -webkit-transition: color .6s;
+  transition: color .6s;
+}
+
+.services-section i:hover {
+  color: #000;
 }
 
 .services-section .solutions-block {
   width: 100%;
-  height: 50vh;
   background: #998899;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -267,7 +274,6 @@ body {
 
 .services-section .brands-block {
   width: 100%;
-  height: 50vh;
   background: #aa99ff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -311,11 +317,6 @@ body {
 .services-section .showcase .showcase-item .icon {
   font-size: 8rem;
   color: #333;
-}
-
-.services-section .showcase .showcase-item .title {
-  color: #000;
-  font-size: 1.4rem;
 }
 
 .section-contacts {
@@ -369,10 +370,6 @@ body {
           justify-content: center;
 }
 
-.right-pane .title {
-  margin-bottom: 1rem;
-}
-
 .right-pane .contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,6 +403,7 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   width: 20%;
+  margin-bottom: 2rem;
   padding: 0.33rem;
   border: none;
   border-radius: 5px;

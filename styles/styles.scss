@@ -11,10 +11,25 @@ body {
   user-select: none;
 }
 
-.section {
-  height: 100vh;
-  width: 100%;
+.main-title {
+  font-size: 11rem;
+  color: #fff;
+  font-weight: 100;
 }
+
+.section-title {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+
+.subsection-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
 
 // Navbar Styling
 .navbar {
@@ -40,12 +55,14 @@ body {
 // Homepage styling
 .homepage {
   background: url("../assets/homepage_bg.jpg") no-repeat center center fixed;
-  height: 100%;
+  height: 100vh;
 
   .overlay {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
   }
 
   &__content {
@@ -55,11 +72,6 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-
-    &__title {
-      font-size: 10rem;
-      font-weight: 100;
-    }
 
     &__description {
       width: 50%;
@@ -85,27 +97,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3rem;
 
   .about {
-    height: 75%;
     width: 75%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 3rem;
-
-    &-title {
-      color: #fff;
-      margin-bottom: 4rem;
-    }
 
     &__text {
       margin: 5rem 0;
       color: white;
-      &__title {
-        font-size: 1.5rem;
-        font-weight: 700;
-      }
+    }
+
+    .par1{
+      text-align: right;
     }
 
     &__picture-1 {
@@ -122,10 +129,6 @@ body {
 }
 
 // Location section styling
-.location-title {
-  color: white;
-  padding-bottom: 3rem;
-}
 
 .location-section {
   background: #786895;
@@ -134,12 +137,14 @@ body {
 
   align-items: center;
   justify-content: center;
+
+  padding-bottom: 3rem;
 }
 
 .location {
   display: flex;
-  height: 60%;
-  width: 60%;
+  width: 75vw;
+  height: 75vh;
 
   &__map {
     flex: 1;
@@ -178,22 +183,23 @@ body {
 // Services section styling
 
 .services-section {
-  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  .subsection-title {
-    font-weight: 700;
-    font-size: 1.5rem;
-    margin-top: 5rem;
+  i {
+    color: #333;
+    transition: color .6s;
+  }
+  
+  i:hover {
+    color: #000;
   }
 
   .solutions-block {
     width: 100%;
-    height: 50vh;
     background: #998899;
 
     display: flex;
@@ -203,7 +209,6 @@ body {
 
   .brands-block {
     width: 100%;
-    height: 50vh;
     background: #aa99ff;
 
     display: flex;
@@ -230,10 +235,7 @@ body {
         color: #333;
       }
 
-      .title {
-        color: #000;
-        font-size: 1.4rem;
-      }
+
     }
   }
 }
@@ -268,10 +270,6 @@ body {
   align-items: center;
   justify-content: center;
 
-  .title {
-    margin-bottom: 1rem;
-  }
-
   .contact-form {
     display: flex;
     flex-direction: column;
@@ -297,6 +295,7 @@ body {
       font-size: 1.3rem;
       align-self: center;
       width: 20%;
+      margin-bottom: 2rem;
 
       padding: 0.33rem;
       border: none;
