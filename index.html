@@ -33,7 +33,7 @@
   <header class="homepage" id="homepage">
       <div class="homepage__overlay"></div>
       <div class="homepage__content">
-        <h1 class="main-title">Cellulandia</h1>
+        <h1 class="homepage__title">Cellulandia</h1>
         <span class="homepage__description">
           Negozio di telefonia ed elettronica sito a Ponte nelle Alpi (BL).<br><br>
           Nati nel 200?, offriamo servizi di vendita di apparecchiature elettroniche, 
@@ -41,26 +41,26 @@
           consulenza per acquisti e contratti e altro ancora.<br><br>Vieni a trovarci!
         </span>
         <div class="homepage__buttons">
-          <button href="#location" class="btn btn--light">
+          <a href="#location" class="btn btn--light">
             Vieni a trovarci
-          </button>
-          <button class="btn btn--light">
+          </a>
+          <a href="#contacts" class="btn btn--light">
             Contattaci
-          </button>
+          </a>
         </div>
       </div>
   </header>
 
   <!-- Section 2: About -->
   <div class="section" id="about">
-    <div class="section__container">
+    <div class="section__container bg--primary">
       <h1 class="section__title">Chi Siamo</h1>
 
       <div class="section__content">
         <div class="about">
-          <div class="about__block">
+          <div class="about__block about__block--left">
             <div class="about__picture about__picture--left"></div>
-            <div class="about__text about__text--right">
+            <div class="about__text">
               <h2 class="about__subtitle">Il negozio</h2>
               <div class="about__description">
                 Sito in Viale Cadore 23/A, con parcheggio dedicato proprio davanti all'ingresso,
@@ -70,7 +70,7 @@
             </div>
           </div>
 
-          <div class="about__block">
+          <div class="about__block about__block--right">
             <div class="about__text">
               <h2 class="about__subtitle">Il proprietario</h2>
               <div class="about__description">
@@ -90,12 +90,14 @@
 
   <!-- Section 3: Location -->
   <div class="section" id="location">
-    <div class="section__container">
+    <div class="section__container bg--secondary">
       <h1 class="section__title">Dove Siamo</h1>
       <div class="section__content">
         <div class="location">
-          <div id='map'></div>
-          <div class="location__info">
+          <div class='location__map'>
+            <div id='map'></div>
+          </div>
+          <div class="location__info bg--paradise-pink">
             <div class="location__where">
               <span class="city"
                 >VIALE CADORE 23/A, 32010, <br />
@@ -120,7 +122,7 @@
   <!-- Section 4: Services -->
   <div class="section" id="services">
 
-    <div class="section__container">
+    <div class="section__container bg--caribbean">
       <!-- <div class="services__block services--solutions"> -->
       <h1 class="section__title">I nostri servizi</h1>
       <div class="section__content">
@@ -151,73 +153,81 @@
       </div>
     </div>
     
-
-    <div class="section__container">
-      <!-- <div class="services__block services--brands"> -->
-        <h1 class="section__title">I nostri operatori</h1>
-        <div class="section__content">
-          <div class="services">
-            <div class="services__item">
-              <div class="services__icon">
-                <i class="fas fa-border-all"></i>
-              </div>
-              <div class="title brand-name">TIM</div>
+    <div class="section__container bg--crayola">
+      <h1 class="section__title">I nostri operatori</h1>
+      <div class="section__content">
+        <div class="services">
+          <div class="services__item">
+            <div class="services__icon">
+              <i class="fas fa-border-all"></i>
             </div>
-            <div class="services__item brand-tim">
-              <div class="services__icon">
-                <i class="fas fa-border-all"></i>
-              </div>
-              <div class="title brand-name">FASTWEB</div>
+            <div class="title brand-name">TIM</div>
+          </div>
+          <div class="services__item brand-tim">
+            <div class="services__icon">
+              <i class="fas fa-border-all"></i>
             </div>
-            <div class="services__item">
-              <div class="services__icon">
-                <i class="fas fa-border-all"></i>
-              </div>
-              <div class="title brand-name">KENA</div>
+            <div class="title brand-name">FASTWEB</div>
+          </div>
+          <div class="services__item">
+            <div class="services__icon">
+              <i class="fas fa-border-all"></i>
             </div>
-            <div class="services__item">
-              <div class="services__icon">
-                <i class="fas fa-border-all"></i>
-              </div>
-              <div class="title brand-name">HO MOBILE</div>
+            <div class="title brand-name">KENA</div>
+          </div>
+          <div class="services__item">
+            <div class="services__icon">
+              <i class="fas fa-border-all"></i>
             </div>
+            <div class="title brand-name">HO MOBILE</div>
           </div>
         </div>
       </div>
-    <!-- </div> -->
+    </div>
+
   </div>
 
   <!-- Section 5: Contacts -->
   <div class="section" id="contacts">
     <div class="contacts">
-      <div class="contacts__block contacts__block--left">
+      <div class="contacts__block contacts__block--left bg--paradise-pink">
 
-        <div class="contact-info">
-          <div class="phone-number">
-          <i class="fas fa-phone"></i>
-          <span class="tel">123 456 7890</span>
-        </div>
+        <div class="contacts__info">
+          <div>
+            <i class="fas fa-phone"></i>
+            <span class="tel">123 456 7890</span>
+          </div>
 
-        <div class="email-addr">
-          <i class="fas fa-envelope"></i>
-          <span class="email">info.vigato@gmail.com</span>
-        </div>
+          <div>
+            <i class="fas fa-envelope"></i>
+            <span class="email">info.vigato@gmail.com</span>
+          </div>
 
         </div>
       </div>
 
-      <div class="contacts__block contacts__block--right">
+      <div class="contacts__block contacts__block--right bg--secondary">
 
-        <h1>CONTATTACI</h1>
+        <h1 class="contacts__title">CONTATTACI</h1>
         <form class="contacts__form" method="POST" data-netlify="true">
 
-          <input class="contacts__name" type="text" name="first-name" placeholder="nome" required>
-          <input class="contacts__surname"  type="text" name="last-name" placeholder="cognome" required>
-          <input class="contacts__phone"  type="tel" name="phone" placeholder="telefono" >
-          <input class="contacts__email"  type="email" name="email" placeholder="email" >
-          <textarea class="contacts__message" name="message" cols="40" rows="15"></textarea>
+          <div class="contacts__name">
+            <input type="text" name="first-name" placeholder="nome" required>
+          </div>
+          <div class="contacts__surname">
+            <input type="text" name="last-name" placeholder="cognome" required>
+          </div>
+          <div class="contacts__phone">
+            <input type="tel" name="phone" placeholder="telefono" >
+          </div>
+          <div class="contacts__email">
+            <input type="email" name="email" placeholder="email" >
+          </div>
+          <div class="contacts__message">
+            <textarea name="message" cols="40" rows="15"></textarea>
+          </div>
 
-          <input class="btn btn__submit" type="submit">
+          <input class="btn btn--light" type="submit">
           
         </form>
       </div>
