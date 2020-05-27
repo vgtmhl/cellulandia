@@ -1,26 +1,30 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   // General styling
   body {
     font-size: 16px;
   }
 
-  .main-title {
-    font-size: 3rem;
-    color: #fff;
+  h1 {
+    font-size: 3.2rem;
   }
+
+  // .main-title {
+  //   font-size: 3rem;
+  //   color: #fff;
+  // }
   
-  .section-title {
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 700;
-    padding: 2rem 0;
-  }
+  // .section-title {
+  //   color: #fff;
+  //   font-size: 3rem;
+  //   font-weight: 700;
+  //   padding: 2rem 0;
+  // }
   
-  .subsection-title {
-    font-weight: 700;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-  }
+  // .subsection-title {
+  //   font-weight: 700;
+  //   font-size: 1.5rem;
+  //   margin-top: 2rem;
+  // }
 
   // Navbar styling
   .navbar {
@@ -29,149 +33,139 @@
 
   // Homepage Styling
   .homepage {
-    background: url("../assets/homepage_bg.jpg") no-repeat right;
+    background: url("../assets/homepage_bg.jpg") no-repeat center top;
+    background-size: cover;
+
 
     &__content {
-      &__title {
-        font-size: 5rem;
-        margin-top: 8rem;
-        margin-bottom: 3rem;
-      }
+      padding: 1rem;
+    }
+    
+    &__title {
+      font-size: 3.6rem;
+      line-height: 3rem;
+    }
 
-      &__description {
+    &__description {
+      font-size: 1rem;
+    }
+
+    &__buttons {
+      button {
         font-size: 1rem;
+        padding: 1rem;
       }
+    }
+  }
 
-      &__buttons {
-        button {
-          font-size: 1rem;
-          padding: 1rem;
-        }
-      }
+  .section {
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__content {
+      padding: 0;
     }
   }
 
   // About section styling
-  .about-section {
-    .about-title {
-      margin-top: 3rem;
+.about {
+  grid-template-columns: 1fr;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+
+    &--left {
+      .about{
+        &__picture {
+          background: url("../assets/store_pic.jpg") no-repeat center center/cover;
+        }
+        &__text {
+        }
+      }
     }
-    .about {
-      display: flex;
-      flex-direction: column;
-
-      .par1, .par2 {
-        text-align: center;
-        margin: 1rem 0;
-      }
-
-      &__picture-1,
-      &__picture-2 {
-        height: 200px;
-        width: 300px;
-        margin: 0.5rem;
-        align-self: center;
-      }
-
-      &-block-1 {
-        display: flex;
-        flex-direction: column;
-      }
-
-      &-block-2 {
-        display: flex;
-        flex-direction: column;
-
-        .about__picture-2 {
-          order: 1;
-        }
-
-        .par2 {
-          order: 2;
-        }
-      }
-
-      &__text {
-        align-self: center;
-        text-align: center;
-
-        &__title {
-          margin: 0;
+  
+    &--right {
+      flex-direction: column-reverse;
+      .about{
+        &__picture {
+          background: url("../assets/store_pic.jpg") no-repeat center center/cover;
         }
       }
     }
   }
+
+    &__text {
+      padding: 20px;
+      text-align: left !important;
+    }
+}
+  
 
   //   location styling
-  .location-title {
-    display: none;
+  #location {
+  
+    .section__container {
+      padding: 0;
+    }
+
+    .section__title {
+      display: none;
+    }
   }
+
   .location {
     flex-direction: column;
 
-    #map {
-      align-self: center;
-      height: 400px;
-      width: 100vw;
-      margin-bottom: 2rem;
+    &__map {
+      width: 100%;
     }
 
     &__info {
-      background: #786895;
 
       &__opening-hours {
-        line-height: 1.3rem;
+        line-height: 1.2rem;
       }
     }
   }
 
   // Services styling
-  .services-section {
-    .subsection-title {
-      margin-top: 2rem;
-    }
-
-    .showcase {
-      flex-direction: column;
-
-      .showcase-item {
-        margin-bottom: 1.5rem;
-        .icon {
-          font-size: 4rem;
-        }
-      }
-    }
+  .services {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   // Contacts styling
-
-  .section-contacts {
+  .contacts {
     flex-direction: column;
-  }
 
-  .left-pane {
-    padding: 3rem 0;
-    order: 2;
-  }
-
-  .right-pane {
-    .title {
-      margin-top: 1rem;
+    &__block {
+      padding: 60px 20px;
     }
-    .contact-form {
-      .fields {
-        display: flex;
-        flex-direction: column;
-        margin: 0 2rem;
-      }
 
-      .input-message {
-        margin: 2rem;
-      }
+    &__form {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, auto);
+    }
 
-      .input-field {
-        text-align: center;
-      }
+    &__name {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    &__email {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    &__phone {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    &__message {
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
   }
 }

@@ -1,3 +1,5 @@
+@import 'colors';
+
 // Global styling
 * {
   margin: 0;
@@ -31,6 +33,30 @@ h2 {
   padding-bottom: 1rem;
 }
 
+
+.bg {
+
+  &--primary {
+    background: $primary;
+  }
+  
+  &--secondary {
+    background: $secondary;
+  }
+  
+  &--caribbean {
+    background: $caribbean;
+  }
+  
+  &--crayola {
+    background: $crayola;
+  }
+  
+  &--paradise-pink {
+    background: $paradise-pink;
+  }
+}
+
 .section {
   @include flex-center();
   flex-direction: column;
@@ -41,15 +67,6 @@ h2 {
     flex-direction: column;
     width: 100%;
     padding: 80px 0;
-    background: #333;
-
-    &--primary {
-      background: rgb(83, 76, 76);
-    }
-
-    &--secondary {
-      background: rgb(92, 92, 92);
-    }
   }
 
     &__title {
@@ -68,12 +85,12 @@ h2 {
     }
 }
 
-.main-title {
-  font-size: 8rem;
-  color: #fff;
-  font-weight: 900;
-  margin-bottom: 60px;
-}
+// .main-title {
+//   font-size: 8rem;
+//   color: #fff;
+//   font-weight: 900;
+//   margin-bottom: 60px;
+// }
 
 
 // Navbar Styling
@@ -100,9 +117,9 @@ h2 {
 
 // Homepage styling
 .homepage {
-  background: url("../assets/homepage_bg.jpg") no-repeat center center fixed;
   @include flex-center();
   height: 100vh;
+  background: url("../assets/homepage_bg.jpg") no-repeat center center/cover;
 
   &__overlay {
     width: 100%;
@@ -120,6 +137,12 @@ h2 {
     color: white;
     z-index: 2;
   }
+    &__title {
+      font-size: 8rem;
+      word-break: break-all;
+      text-align: center;
+    }
+
     &__description {
       max-width: 500px;
       text-align: center;
@@ -128,8 +151,8 @@ h2 {
     &__buttons {
       margin-top: 3rem;
       display: flex;
-
-      button {
+      
+      .btn {
         margin: 0 1.5rem;
       }
     }
@@ -137,53 +160,70 @@ h2 {
 
 // About section styling
 .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 2rem;
+  @include flex-center();
+  flex-direction: column;
 
-    &__text {
-      margin: 5rem 0;
-      color: white;
-      
-      &--right{
-        text-align: right;
+  &__block {
+    @include flex-center();
+
+    &--left {
+      margin-bottom: 40px;
+      .about{
+        &__picture {
+          background: url("../assets/store_pic.jpg") no-repeat center center/cover;
+        }
+        &__text {
+          text-align: left;
+        }
       }
     }
-    
+  
+    &--right {
+      .about{
+        &__picture {
+          background: url("../assets/store_pic.jpg") no-repeat center center/cover;
+        }
+        &__text {
+          text-align: right;
+        }
+      }
+    }
+  }
+  
     &__picture {
+      width: 100%;
+      min-width: 500px;
       height: 400px;
-      
-      &--left {
-        background: url("../assets/store_pic.jpg") no-repeat center center/cover;
-      }
+    }
 
-      &--right {
-        background: url("../assets/store_pic.jpg") no-repeat center center/cover;
-      }
+    &__text {
+      color: white;
+      padding: 0 40px;
     }
 }
 
 // Location section styling
-
 .location {
   display: flex;
   width: 100%;
-  height: 60vh;
+  // height: 60vh;
 
   .mapboxgl-map {
-    width: 60%;
+    width: 100%;
+    height: 100%;
   }
+    &__map {
+      width: 60%;
+      height: 60vh;
+    }
 
     &__info {
+      @include flex-center();
+      flex-direction: column;
       flex: 1;
-      background-color: #333;
       color: white;
 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      padding: 40px 20px;
     }
       &__where {
         font-size: 1.3rem;
@@ -218,28 +258,32 @@ h2 {
   // &--brands {
   //   background: #c4c4c4;
   // }
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  color: white;
 
-  display: flex;
+  width: 100%;
 
   &__item {
-    margin: 0 3.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
 
   &__icon {
     font-size: 8rem;
-    color: #333;
 
     i {
-      color: #333;
-      transition: color .6s;
+      transition: opacity .6s;
+      opacity: 0.5;
     }
     
     i:hover {
-      color: #000;
+      opacity: 1;
     }
   }
 }
@@ -251,82 +295,85 @@ h2 {
 
   &__block {
     @include flex-center();
+    width: 100%;
     padding: 60px;
 
     &--left {
-      // flex: 1;
-      background: #292929;
-
-      i {
-        font-size: 2rem;
-        margin-right: 1rem;
-        color: white;
-      }
-
-      span {
-        font-size: 2rem;
-        color: white;
-      }
+      min-height: 400px;
+      flex: 1;
     }
 
     &--right {
       flex-direction: column;
-      // flex: 2;
-      background: #ebebeb;
-      width: 60%;
+      flex: 2;
+    }
+  }
+
+  &__info {
+    i {
+      font-size: 2rem;
+      margin-right: 1rem;
+      color: white;
+    }
+  
+    span {
+      font-size: 2rem;
+      color: white;
     }
   }
 
   &__form {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(5, auto);
-  grid-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 10px;
 
-  width: 100%;
-  }
+    width: 100%;
 
-  input, textarea {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.3rem;
-    padding: 0.5rem;
-    border: none;
-    color: #333;
-  }
+    input, textarea {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.3rem;
+      padding: 0.5rem;
+      border: none;
+      color: #333;
 
-  &__name {
-    
-  }
-
-  &__email {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-
-  &__phone {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-
-  &__message {
-      grid-column-start: 1;
-      grid-column-end: 3;
-
-      textarea {
-          min-height: 25vh;
-      }
-  }
-
-  .btn__submit {
-    background: #222222;
-    color: white;
-
-    transition: background 0.2s;
-
-    &:hover {
-      background: #303030;
+      width: 100%;
     }
   }
+
+    &__name {
+      
+    }
+
+    &__email {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    &__phone {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    &__message {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        textarea {
+            min-height: 25vh;
+        }
+    }
+
+    .btn__submit {
+      background: #222222;
+      color: white;
+
+      transition: background 0.2s;
+
+      &:hover {
+        background: #303030;
+      }
+    }
 
   // .input-field {
   //   font-size: 1.3rem;
@@ -393,12 +440,11 @@ footer {
   outline: none;
 
   &--light {
-    background: #111;
-    color: #eee;
+    background: $paradise-pink;
+    color: white !important;
 
     &:hover {
-      background: #eee;
-      color: #395a91;
+      background: lighten($color: $paradise-pink, $amount: 5%);
     }
   }
 }
