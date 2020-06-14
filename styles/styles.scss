@@ -162,6 +162,7 @@ h2 {
 .about {
   @include flex-center();
   flex-direction: column;
+  overflow: hidden;
 
   &__block {
     @include flex-center();
@@ -171,6 +172,7 @@ h2 {
       .about{
         &__picture {
           background: url("../assets/store_pic.jpg") no-repeat center center/cover;
+          
         }
         &__text {
           text-align: left;
@@ -182,6 +184,7 @@ h2 {
       .about{
         &__picture {
           background: url("../assets/store_pic.jpg") no-repeat center center/cover;
+          max-width: auto;
         }
         &__text {
           text-align: right;
@@ -284,6 +287,7 @@ h2 {
     
     i:hover {
       opacity: 1;
+      cursor: default;
     }
   }
 }
@@ -340,10 +344,6 @@ h2 {
       width: 100%;
     }
   }
-
-    &__name {
-      
-    }
 
     &__email {
       grid-column-start: 1;
@@ -422,19 +422,17 @@ h2 {
   // }
 }
 
-// footer
-footer {
-  height: 8vh;
-  width: 100%;
-  background: black;
-}
-
 // Auxiliary and corrective styling
 .btn {
   border: none;
   padding: 1rem 2rem;
   font-size: 1.4rem;
   border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   cursor: pointer;
   transition: all 0.3s;
   outline: none;
